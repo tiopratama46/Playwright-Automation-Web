@@ -1,0 +1,23 @@
+{
+  "name": "playwright-automation-web",
+  "version": "1.0.0",
+  "description": "Playwright automation tests for web applications",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npx playwright install",
+    "playwright:web": "npx playwright test playwright/web",
+    "playwright:web:headed": "npx playwright test playwright/web --headed",
+    "test:report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.8.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
