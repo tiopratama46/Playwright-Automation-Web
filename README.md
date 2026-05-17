@@ -6,20 +6,16 @@
    ```bash
    npm install
    ```
-2. Install Playwright browsers and dependencies:
+2. Install Playwright 
    ```bash
-   npm run prepare
+  npx playwright install
    ```
 
 ## Run tests
 
 - Run all tests:
   ```bash
-  npm test
-  ```
-- Run tests in headed mode:
-  ```bash
-  npm run test:headed
+  npm run test:report
   ```
 
 ## View report
@@ -28,10 +24,5 @@
   ```bash
   npm run test:report
   ```
+![Report](./assets/Report Automation.png)
 
-## Test files
-
-- Test files are located in the `tests/` directory.
-
-
-![alt text](image.png)
