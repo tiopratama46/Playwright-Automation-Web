@@ -8,7 +8,7 @@
    ```
 2. Install Playwright 
    ```bash
-  npx playwright install
+   npx playwright install
    ```
 
 ## Run tests
@@ -24,5 +24,5 @@
   ```bash
   npm run test:report
   ```
-![Report](./assets/Report Automation.png)
+  ![Report](./assets/report-automation.png)
 
