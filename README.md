@@ -1,5 +1,9 @@
 # Playwright-Automation-Web
 
+
+## Structure Project 
+[Structure](./assets/structure-project.png)
+
 ## Setup
 
 1. Install dependencies:
