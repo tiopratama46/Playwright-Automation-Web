@@ -5,10 +5,20 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "prepare": "npx playwright install",
-    "playwright:web": "npx playwright test playwright/web",
-    "playwright:web:headed": "npx playwright test playwright/web --headed",
-    "test:report": "npx playwright show-report"
+
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+
+    "test:login": "playwright test tests/login.spec.js", 
+    "test:cart": "playwright test tests/cart.spec.js",
+
+    "test:all": "playwright test tests",
+    "test:all:headed": "playwright test tests --headed"
+
+
+
   },
   "keywords": [],
   "author": "",
