@@ -55,7 +55,7 @@ test.describe('Login Feature', () => {
 
       }
 
-    });
+  });
 
   });
 

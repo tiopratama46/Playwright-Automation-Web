@@ -35,5 +35,4 @@ export class LoginPage {
   getErrorMessage() {
     return this.page.locator(this.errorMessage);
   }
-
 }
