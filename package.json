@@ -5,27 +5,31 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+  "test": "playwright test",
+  "test:headed": "playwright test --headed",
+  "test:ui": "playwright test --ui",
+  "test:report": "playwright show-report",
 
-    "test": "playwright test",
-    "test:headed": "playwright test --headed",
-    "test:ui": "playwright test --ui",
-    "test:report": "playwright show-report",
+  "test:login": "playwright test tests/login.spec.js",
+  "test:cart": "playwright test tests/cart.spec.js",
 
-    "test:login": "playwright test tests/login.spec.js", 
-    "test:cart": "playwright test tests/cart.spec.js",
+  "test:all": "playwright test tests",
+  "test:all:headed": "playwright test tests --headed",
 
-    "test:all": "playwright test tests",
-    "test:all:headed": "playwright test tests --headed"
+  "report:html": "playwright show-report",
 
-
-
-  },
+  "report:json": "playwright test",
+  "report:mocha": "node generate-mocha-report.cjs"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.8.0"
+    "@types/node": "^25.8.0",
+    "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4",
+    "mochawesome-report-generator": "^6.3.2"
   },
   "dependencies": {
     "dotenv": "^17.4.2"
